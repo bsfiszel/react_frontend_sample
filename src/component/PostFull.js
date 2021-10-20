@@ -2,12 +2,10 @@ import { useParams, Link } from "react-router-dom";
 
 function PostFull() {
     const { postId } = useParams();
-
     console.log({postId});
     const comments = require("../comments.json");
     const posts = require("../posts.json");
     console.log(comments);
-
     const post = posts.filter(post => post.id == postId)[0];
 
     return(
@@ -36,7 +34,6 @@ function PostFull() {
                 ))}
             </div>
         </div>
-        
     );
 }
 

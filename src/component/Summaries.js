@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 function Summaries() {
     const data = require("../posts.json");
-    // console.log(data[0]);
     var authorIds = [];
     var featPosts = [];
     data.reverse().map((post) => {
@@ -35,8 +34,6 @@ function Summaries() {
                 ))}
             </div>
         </div>
-        
-
     );
 }
 
